@@ -74,3 +74,22 @@ When you run the program, a window will appear to enter the password to be able 
  KeyStore keyStore = builder.getKeyStore();
  ```
 <br>
+
+
+#### After that, it will select the required certificates, which are the digitalSignature certificate
+
+ ```
+ if( x509Certificate.getKeyUsage()[0] == true)
+ ```
+ <br>
+ 
+ 
+ #### and access to the keys
+ 
+ 
+  ```
+ Key key = keyStore.getKey(alias, null); 
+ privateKey  =  (PrivateKey )key ; 
+ publicKey = x509Certificate.getPublicKey();
+  ```
+  <br>
