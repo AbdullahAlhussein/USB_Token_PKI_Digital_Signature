@@ -1,4 +1,4 @@
-# USB_Token_PKI_Digital_Signature
+# USB_Token_PKI_Digital_Signature_Text
 USB token based certificates are an implementation of PKCS#11, one of the Public-Key Cryptography Standards. Digital signature certificates are issued by a Certificate Authority (CA).
 
 
