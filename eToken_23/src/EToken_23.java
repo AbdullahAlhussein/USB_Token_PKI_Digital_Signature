@@ -26,9 +26,9 @@ public class EToken_23 {
 
 				
 
-		// Create instance of SunPKCS11 provider
-     	String pkcs11Config = "C:\\Users\\\\ö0570417090\\eclipse-workspace\\EToken_23\\config.cfg";
-    	java.io.ByteArrayInputStream pkcs11ConfigStream = new java.io.ByteArrayInputStream(pkcs11Config.getBytes());
+	    // Create instance of SunPKCS11 provider
+     	    String pkcs11Config = "C:\\Users\\\\Ã¶0570417090\\eclipse-workspace\\EToken_23\\config.cfg";
+    	    java.io.ByteArrayInputStream pkcs11ConfigStream = new java.io.ByteArrayInputStream(pkcs11Config.getBytes());
 	    sun.security.pkcs11.SunPKCS11 providerPKCS11 = new sun.security.pkcs11.SunPKCS11(pkcs11Config);
 	    java.security.Security.addProvider(providerPKCS11);   
 
@@ -39,8 +39,8 @@ public class EToken_23 {
          
 	    
 	    // Enumerate items (certificates and private keys) in the KeyStore
-        java.util.Enumeration<String> aliases = keyStore.aliases();	 
-        String alias = null;   
+            java.util.Enumeration<String> aliases = keyStore.aliases();	 
+            String alias = null;   
       
   
           while (aliases.hasMoreElements()) {
