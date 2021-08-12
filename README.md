@@ -1,13 +1,11 @@
 # USB_Token_PKI_Digital_Signature_Text
-USB token based certificates are an implementation of PKCS#11, one of the Public-Key Cryptography Standards. Digital signature certificates are issued by a Certificate Authority (CA).
+
 
 
 ## Overview
 ![Group-1198](https://user-images.githubusercontent.com/70335592/125410523-a0c10980-e3c5-11eb-85c3-e99214753fc5.png)
 
-A USB token is a password-protected physical device used to store digital certificates.
-
- USB token based certificates are an implementation of PKCS#11, one of the Public-Key Cryptography Standards. Digital signature certificates are issued by a Certificate Authority (CA).
+PKI tokens are hardware devices that store digital certificates and private keys securely. When you need to encrypt, decrypt or sign something, the token does this internally in a secure chip meaning the keys are never at risk of being stolen.
  
 ---
  
