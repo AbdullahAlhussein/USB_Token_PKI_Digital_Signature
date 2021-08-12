@@ -27,7 +27,7 @@ The API defines most commonly used cryptographic object types (RSA keys, X.509 C
 
 <br>
  
- ## Specifications of the usb token that worked on :
+ ## Specifications of the USB Token that worked on :
 
 Token name: eToken
 
@@ -101,7 +101,6 @@ Note: The default slot number when left unspecified is 0. SafeNet eToken 5100 wi
 ```
  sun.security.pkcs11.SunPKCS11 providerPKCS11 = new sun.security.pkcs11.SunPKCS11(pkcs11Config);
 ```
-<br>
 
 ---
 <br>
