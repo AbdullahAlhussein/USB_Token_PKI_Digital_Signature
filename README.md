@@ -7,8 +7,43 @@
 
 PKI tokens are hardware devices that store digital certificates and private keys securely. When you need to encrypt, decrypt or sign something, the token does this internally in a secure chip meaning the keys are never at risk of being stolen.
  
+
+<br>
+
+USB token based certificates are an implementation of PKCS#11, one of the Public-Key Cryptography Standards. Digital signature certificates are issued by a Certificate Authority (CA).
+
+<br>
+
+
+
+## PKCS#11 
+
+The PKCS #11 standard defines a platform-independent API to cryptographic tokens, such as hardware security modules (HSM) and smart cards.
+
+The API defines most commonly used cryptographic object types (RSA keys, X.509 Certificates, DES/Triple DES keys, etc.) and all the functions needed to use, create/generate, modify and delete those objects [Read more PKCS11]( https://docs.oracle.com/javase/7/docs/technotes/guides/security/p11guide.html#Intro).
+
 ---
+
+
+<br>
  
+ ## Specifications of the usb token that worked on :
+
+Token name: eToken
+
+Token category: Hardware
+
+Product name: SafeNet eToken 5110 FIPS
+
+Model: Token 15.0.0.3 15.0.19
+
+Card type: Java Card
+
+OS version: eToken Java Applet 1.8.5
+
+---
+<br>
+
  ## installation
  
  <br>
@@ -37,31 +72,11 @@ PKI tokens are hardware devices that store digital certificates and private keys
 
 
 
----
-
-## PKCS#11 
-
-The PKCS #11 standard defines a platform-independent API to cryptographic tokens, such as hardware security modules (HSM) and smart cards.
-
-The API defines most commonly used cryptographic object types (RSA keys, X.509 Certificates, DES/Triple DES keys, etc.) and all the functions needed to use, create/generate, modify and delete those objects [Read more PKCS11]( https://docs.oracle.com/javase/7/docs/technotes/guides/security/p11guide.html#Intro).
 
 
 ---
-## Specifications of the usb token that worked on :
+<br>
 
-Token name: eToken
-
-Token category: Hardware
-
-Product name: SafeNet eToken 5110 FIPS
-
-Model: Token 15.0.0.3 15.0.19
-
-Card type: Java Card
-
-OS version: eToken Java Applet 1.8.5
-
----
 ## Add an external configuration file which content following information:
 
 In order to enable the JDK to access the security token, you will first need to create a configuration file. Open any plain-text editor and create a file named eToken.cfg. The file should contain 2, possibly 3, lines:
@@ -87,6 +102,7 @@ Note: The default slot number when left unspecified is 0. SafeNet eToken 5100 wi
 <br>
 
 ---
+<br>
 # Run the program
 When you run the program, a window will appear to enter the password to be able to connect to the USB Token and get the Certificates
 <br>
